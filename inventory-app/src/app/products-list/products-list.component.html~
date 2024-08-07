@@ -1,0 +1,9 @@
+<div class="ui items">
+	@for (myProduct of productList; track myProduct) {
+	<product-row
+		[product]="myProduct"
+		(click)='clicked(myProduct)'
+		[class.selected]="isSelected(myProduct)">
+	</product-row>
+	}
+</div>
